@@ -9,7 +9,7 @@ CREATE TABLE yumak_user (
     last_name character varying(30) NOT NULL,
     email character varying(75) NOT NULL,
     password character varying(128) NOT NULL,
-    is_active boolean NOT NULL,
+    active boolean DEFAULT true NOT NULL,
     date_joined timestamp with time zone NOT NULL 
 );
 

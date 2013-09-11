@@ -1,3 +1,44 @@
-body { margin:0px; padding:0px; }
+body { height:100%; margin:0px; padding:0px; background:url('/assets/images/backgrounds/bg_3.png') repeat left top fixed; font-family:'ColaborateLightRegular'; font-size:14px; color:#333; }
 
-#Surface { width:958px; margin:auto; }
+input:focus, textarea:focus {outline:none;}
+a { text-decoration:none; color:#333; }
+ul, li { margin:0px; padding:0px; list-style:none; }
+
+#Surface { width:958px; margin:auto; padding:30px 0px 93px 0px; overflow:hidden; }
+#Surface aside , #Surface section { background:white; box-shadow:0px 0px 2px 0px rgba(0,0,0,0.1); }
+
+/*
+*
+*
+* Surface aside 
+*/
+#Surface aside { float:left; width:226px; }
+#Surface aside #Logo { font-family:'Changa One', cursive; font-size:55px; text-align:center; }
+#Surface aside #Category { margin-top:20px; }
+#Surface aside #Category li { font-family:'ColaborateBoldRegular'; cursor:pointer; }
+#Surface aside #Category li a { padding:11px; display:block; }
+#Surface aside #Category li a:hover, #Surface aside #Category li a.active { background:#333; color:white; }
+
+
+/*
+*
+* Surface Section
+*/
+#Surface section { float:right; width:720px; }
+#Surface section .options { height:49px; border-bottom:1px solid #ccc; }
+#Surface section .options .breadCrumb { } 
+#Surface section .options .breadCrumb ul { float:left; width:auto; margin:19px 0px 0px 15px; } 
+#Surface section .options .checkout { cursor:pointer; float: right; width: auto;height: 31px;border: 1px solid #c6c6c6; margin: 9px 9px 0px 0px;background: rgba(204, 204, 204, 0.41); box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.15);position: relative;z-index: 200; }
+#Surface section .options .checkout:hover { background:rgba(204, 204, 204, 0.64); }
+#Surface section .options .checkout a { float: left;width: auto;height: 31px;line-height: 31px;font-size: 12px;color: #000000;padding: 0px 14px 0px 12px; font-weight: bold; font-size:15px; }
+#Surface section .options .checkout a span { margin-left:4px; }
+
+#Surface section .options .checkout .icon.cart { float:left; font-size:24px; margin:4px 0 0 0; }
+
+#Surface section #Products { overflow:hidden; }
+#Surface section #Products ul { overflow:hidden; }
+#Surface section #Products ul li { float: left;width: 210px;height: 251px;padding: 14px;background: #ffffff;margin: 2px 2px 0px 0px;box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);text-align: center; }
+#Surface section #Products ul li img { max-width: 210px;vertical-align: middle;max-height: 190px;width: 210px; } 
+#Surface section #Products ul li .price { display: inline-block;text-align: center;font-weight: bold;color: red;font-size: 16px;line-height: 19px;margin: 8px 0px 0px 0px; }
+#Surface section #Products ul li .priced { display: inline-block;text-decoration: line-through;text-align: center;font-weight: bold;color: #000000;font-size: 16px;line-height: 19px;margin: 8px 0px 0px 0px;  }
+#Surface section #Products ul li .name { display: block;color: #666666;font-size: 12px;line-height: 16px;text-align: center;margin: 2px 0px 0px 0px; }
