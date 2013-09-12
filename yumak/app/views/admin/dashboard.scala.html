@@ -1,0 +1,12 @@
+@(user: models.User)
+
+@main("Admin Dashboard", "DashboardPage") {
+    <h1>Dashboard Page</h1>
+    <p>You are logged in as @user.username / @user.email</p>
+
+    <ul>
+      <li><a href="@routes.Authentication.logout">Logout</a></li>
+      <li><a href="@routes.Admin.dashboard">dashboard</a></li>
+    </ul>
+
+}
