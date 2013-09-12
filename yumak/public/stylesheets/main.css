@@ -1,4 +1,4 @@
-body { height:100%; margin:0px; padding:0px; background:url('/assets/images/backgrounds/bg_3.png') repeat left top fixed; font-family:'ColaborateLightRegular'; font-size:14px; color:#333; }
+body { height:100%; margin:0px; padding:0px; background:url('/assets/images/backgrounds/bg_2.png') repeat left top fixed; font-family:'ColaborateLightRegular'; font-size:14px; color:#333; }
 
 html#IndexPage {}
 
@@ -33,6 +33,8 @@ span.success { color: rgb(25, 124, 143); font-size: 15px;text-align: center;font
 #Surface section .options { height:49px; border-bottom:1px solid #ccc; }
 #Surface section .options .breadCrumb { } 
 #Surface section .options .breadCrumb ul { float:left; width:auto; margin:19px 0px 0px 15px; } 
+#Surface section .options .breadCrumb li { } 
+#Surface section .options .breadCrumb li span { color:#b6b6b6; } 
 #Surface section .options .checkout { cursor:pointer; float: right; width: auto;height: 31px;border: 1px solid #c6c6c6; margin: 9px 9px 0px 0px;background: rgba(204, 204, 204, 0.41); box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.15);position: relative;z-index: 200; }
 #Surface section .options .checkout:hover { background:rgba(204, 204, 204, 0.64); }
 #Surface section .options .checkout a { float: left;width: auto;height: 31px;line-height: 31px;font-size: 12px;color: #000000;padding: 0px 14px 0px 12px; font-weight: bold; font-size:15px; }
@@ -54,7 +56,7 @@ span.success { color: rgb(25, 124, 143); font-size: 15px;text-align: center;font
 *
 * Form
 */
-html#LoginPage body { background:#f6f6f6!important; }
+html#LoginPage body {  }
 html#LoginPage #Surface { width: 330px; }
 html#LoginPage #Surface #Login { }
 html#LoginPage #Surface #Login .top { width: 290px;height: 45px;background: #4ca4f6;border-top: 1px solid #2e67ab;border-left: 1px solid #2e67ab;border-right: 1px solid #2e67ab;-webkit-border-top-left-radius: 10px;-webkit-border-top-right-radius: 10px;-moz-border-radius-topleft: 10px;-moz-border-radius-topright: 10px;border-top-left-radius: 10px;border-top-right-radius: 10px;color: #fff;font-weight: 600;font-size: 24px;text-shadow: 0px -1px #1b5ec0;text-align: left;padding: 16px 0 0 30px; }

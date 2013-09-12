@@ -8,7 +8,7 @@ import play.api.mvc._
 trait Secured {
   
   /**
-   * Retrieve the connected user's email
+   * Retrieve the connected user's username
    */
   private def username(request: RequestHeader) = request.session.get("username")
 
