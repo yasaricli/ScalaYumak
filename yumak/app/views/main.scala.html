@@ -1,8 +1,6 @@
-@(title: String)(content: Html)
-
+@(title: String, htmlid: String)(content: Html)
 <!DOCTYPE html>
-
-<html>
+<html id="@htmlid">
     <head>
         <title>@title</title>
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("/public", "stylesheets/fonts.css")">
@@ -13,34 +11,7 @@
     </head>
     <body>
         <div id="Surface">
-            <aside>
-                <div id="Logo">
-                    <a href="/" title="sitename">
-                        TEST SHOP
-                    </a>
-                </div>
-                <ul id="Category">
-                    <li>
-                        <a href="#" title="categoryname" class="active">
-                            Mens
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="categoryname">
-                            Women's
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" title="categoryname">
-                            Unisex
-                        </a>
-                    </li>
-                </ul>
-            </aside>
-            <section>
-                @content
-            </section>
+            @content
         </div>
     </body>
 </html>

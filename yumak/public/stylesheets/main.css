@@ -1,9 +1,13 @@
 body { height:100%; margin:0px; padding:0px; background:url('/assets/images/backgrounds/bg_3.png') repeat left top fixed; font-family:'ColaborateLightRegular'; font-size:14px; color:#333; }
 
+html#IndexPage {}
+
 input:focus, textarea:focus {outline:none;}
 a { text-decoration:none; color:#333; }
 ul, li { margin:0px; padding:0px; list-style:none; }
+dt, dd{ margin:0px; padding:0px; }
 
+span.error { color: rgb(224, 0, 0);font-size: 15px;text-align: center;font-weight: bold;display: block;text-align: center; }
 #Surface { width:958px; margin:auto; padding:30px 0px 93px 0px; overflow:hidden; }
 #Surface aside , #Surface section { background:white; box-shadow:0px 0px 2px 0px rgba(0,0,0,0.1); }
 
@@ -42,3 +46,19 @@ ul, li { margin:0px; padding:0px; list-style:none; }
 #Surface section #Products ul li .price { display: inline-block;text-align: center;font-weight: bold;color: red;font-size: 16px;line-height: 19px;margin: 8px 0px 0px 0px; }
 #Surface section #Products ul li .priced { display: inline-block;text-decoration: line-through;text-align: center;font-weight: bold;color: #000000;font-size: 16px;line-height: 19px;margin: 8px 0px 0px 0px;  }
 #Surface section #Products ul li .name { display: block;color: #666666;font-size: 12px;line-height: 16px;text-align: center;margin: 2px 0px 0px 0px; }
+
+
+
+/*
+*
+* Form
+*/
+html#LoginPage body { background:#f6f6f6!important; }
+html#LoginPage #Surface { width: 330px; }
+html#LoginPage #Surface #Login { }
+html#LoginPage #Surface #Login .top { width: 290px;height: 45px;background: #4ca4f6;border-top: 1px solid #2e67ab;border-left: 1px solid #2e67ab;border-right: 1px solid #2e67ab;-webkit-border-top-left-radius: 10px;-webkit-border-top-right-radius: 10px;-moz-border-radius-topleft: 10px;-moz-border-radius-topright: 10px;border-top-left-radius: 10px;border-top-right-radius: 10px;color: #fff;font-weight: 600;font-size: 24px;text-shadow: 0px -1px #1b5ec0;text-align: left;padding: 16px 0 0 30px; }
+html#LoginPage #Surface #Login form { overflow:hidden; width: 270px;background: #e0e0e0;border-left: 1px solid #cdcdcd;border-right: 1px solid #cdcdcd;-webkit-border-bottom-right-radius: 10px;-webkit-border-bottom-left-radius: 10px;-moz-border-radius-bottomright: 10px;-moz-border-radius-bottomleft: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;padding: 15px 25px 25px 25px;-webkit-box-shadow: 0px 2px 0px 0px #ffffff;box-shadow: 0px 2px 0px 0px #ffffff; }
+html#LoginPage #Surface #Login form input { display: block;font-size: 20px;width: 248px;margin: 13px 0px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;font-weight: 300;border: 1px solid #bcbcbc;padding: 10px 5px 10px 15px;-webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2);box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2); }
+html#LoginPage #Surface #Login form .submit_btn { float: right;margin-top: 10px;width: 86px;height: 47px;line-height: 47px;color: #353434;text-align: center;font-weight: 500;font-size: 16px;border: 1px solid #adadad;border-radius: 5px;background-image: -webkit-gradient(linear, center top, center bottom, from(#f6f6f6), to(#e6e6e6 72%));background-image: -webkit-linear-gradient(top, #f6f6f6, #e6e6e6 72%);background-image: -moz-linear-gradient(top, #f6f6f6, #e6e6e6 72%);background-image: -o-linear-gradient(top, #f6f6f6, #e6e6e6 72%);background-image: -ms-linear-gradient(top, #f6f6f6, #e6e6e6 72%);background-image: linear-gradient(to bottom, #f6f6f6, #e6e6e6 72%);-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18); }
+
+html#LoginPage #Surface #Login form .submit_btn:hover { -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);box-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);background-image: -webkit-gradient(linear, center top, center bottom, from(#e6e6e6), to(#f6f6f6 72%));background-image: -webkit-linear-gradient(top, #e6e6e6, #f6f6f6 72%);background-image: -moz-linear-gradient(top, #e6e6e6, #f6f6f6 72%);background-image: -o-linear-gradient(top, #e6e6e6, #f6f6f6 72%);background-image: -ms-linear-gradient(top, #e6e6e6, #f6f6f6 72%);background-image: linear-gradient(to bottom, #e6e6e6, #f6f6f6 72%); }

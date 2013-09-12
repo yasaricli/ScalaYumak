@@ -1,0 +1,14 @@
+@(user: models.User)
+
+@main("restricted Page", "RestrictedPage") {
+
+    <h1>Play! Login Sample - Restricted Area</h1>
+
+    <p>You are logged in as @user.name / @user.email</p>
+
+    <ul>
+      <li><a href="@routes.Authentication.logout">Logout</a></li>
+      <li><a href="@routes.Restricted.index">Restricted Area</a></li>
+    </ul>
+
+}

@@ -17,4 +17,10 @@ GET     /uploads/*file               controllers.Assets.at(path="/uploads", file
 
 # Cart Controllers
 
-# User Controllers
+# Auth Controllers
+GET     /login                      controllers.Authentication.login
+POST    /login                      controllers.Authentication.authenticate
+GET     /logout                     controllers.Authentication.logout
+
+# Restricted content
+GET     /restricted                 controllers.Restricted.index

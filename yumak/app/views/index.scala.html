@@ -1,82 +1,110 @@
 @(message: String)
 
-@main("Welcome to Scala Yumak E-commerce") {
-    <div class="options">
-        <div class="breadCrumb">
-            <ul>
-                <li>
-                    <span>All Products</span>
-                </li>
-            </ul>
-        </div>
+@main("Welcome to Scala Yumak E-commerce", "IndexPage") {
+    <aside>
+        <div id="Logo">
+            <a href="/" title="sitename">
+                TEST SHOP
 
-        <div class="checkout">
-            <span class="icon cart"></span>
-            <a href="#cart">
-                <span class="text">Cart</span>
-                <span class="length">( 0 )</span>
             </a>
         </div>
-    </div>
 
-    <div id="Products">
-        <ul>
-            <li class="product">
-                <a href="#" title="productname">
-                    <img src="@routes.Assets.at("/uploads", "product_images/bc67695570f376f0f169351a209dda99.jpg")" alt="productname"> 
+        <ul id="Category">
+            <li>
+                <a href="#" title="categoryname" class="active">
+                    Mens
                 </a>
-                <span class="priced">929.00</span>
-                <span class="price">557,40</span>
-                <span class="name">"DIESEL DZ4207 Erkek Kol Saati"</span>
             </li>
-
-            <li class="product">
-                <a href="#" title="productname">
-                    <img src="@routes.Assets.at("/uploads", "product_images/c62c04a8e49dadaaed5c17ad49cb91fe.jpg")" alt="productname"> 
+            <li>
+                <a href="#" title="categoryname">
+                    Women's
                 </a>
-                <span class="priced">529.01</span>
-                <span class="price">317.40</span>
-                <span class="name">"DIESEL DZ5343 Bayan Kol Saati"</span>
             </li>
-
-
-            <li class="product">
-                <a href="#" title="productname">
-                    <img src="@routes.Assets.at("/uploads", "product_images/98a7917fa0333f0f61df33452dff8c21.jpg")" alt="productname"> 
+            <li>
+                <a href="#" title="categoryname">
+                    Unisex
                 </a>
-                <span class="priced">1.129</span>
-                <span class="price">677,40</span>
-                <span class="name">"DIESEL DZ7273 Erkek Kol Saati"</span>
             </li>
-
-            <li class="product">
-                <a href="#" title="productname">
-                    <img src="@routes.Assets.at("/uploads", "product_images/65a6d5180e3b578bf73d99d8ec45043a.jpg")" alt="productname"> 
-                </a>
-                <span class="priced">599.00</span>
-                <span class="price">359.40</span>
-                <span class="name">"DIESEL DZ5342 Bayan Kol Saati"</span>
-            </li>
-
-
-            <li class="product">
-                <a href="#" title="productname">
-                    <img src="@routes.Assets.at("/uploads", "product_images/7bf57bbc780ed7492372ae41de51bbf8.jpg")" alt="productname"> 
-                </a>
-                <span class="priced">898.99</span>
-                <span class="price">539.49</span>
-                <span class="name">"DIESEL DZ4235 Erkek Kol Saati"</span>
-            </li>
-
-            <li class="product">
-                <a href="#" title="productname">
-                    <img src="@routes.Assets.at("/uploads", "product_images/b6f18eeadbaf681f3cb501c63121d1ee.jpg")" alt="productname"> 
-                </a>
-                <span class="priced">898.99</span>
-                <span class="price">539.40</span>
-                <span class="name">"DIESEL DZ5322 Unisex Kol Saati"</span>
-            </li>
-
         </ul>
-    </div>
+    </aside>
+    <section>
+        <div class="options">
+            <div class="breadCrumb">
+                <ul>
+                    <li>
+                        <span>All Products</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="checkout">
+                <span class="icon cart"></span>
+                <a href="#cart">
+                    <span class="text">Cart</span>
+                    <span class="length">( 0 )</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="Products">
+            <ul>
+                <li class="product">
+                    <a href="#" title="productname">
+                        <img src="@routes.Assets.at("/uploads", "product_images/bc67695570f376f0f169351a209dda99.jpg")" alt="productname"> 
+                    </a>
+                    <span class="priced">929.00</span>
+                    <span class="price">557,40</span>
+                    <span class="name">"DIESEL DZ4207 Erkek Kol Saati"</span>
+                </li>
+
+                <li class="product">
+                    <a href="#" title="productname">
+                        <img src="@routes.Assets.at("/uploads", "product_images/c62c04a8e49dadaaed5c17ad49cb91fe.jpg")" alt="productname"> 
+                    </a>
+                    <span class="priced">529.01</span>
+                    <span class="price">317.40</span>
+                    <span class="name">"DIESEL DZ5343 Bayan Kol Saati"</span>
+                </li>
+
+
+                <li class="product">
+                    <a href="#" title="productname">
+                        <img src="@routes.Assets.at("/uploads", "product_images/98a7917fa0333f0f61df33452dff8c21.jpg")" alt="productname"> 
+                    </a>
+                    <span class="priced">1.129</span>
+                    <span class="price">677,40</span>
+                    <span class="name">"DIESEL DZ7273 Erkek Kol Saati"</span>
+                </li>
+
+                <li class="product">
+                    <a href="#" title="productname">
+                        <img src="@routes.Assets.at("/uploads", "product_images/65a6d5180e3b578bf73d99d8ec45043a.jpg")" alt="productname"> 
+                    </a>
+                    <span class="priced">599.00</span>
+                    <span class="price">359.40</span>
+                    <span class="name">"DIESEL DZ5342 Bayan Kol Saati"</span>
+                </li>
+
+
+                <li class="product">
+                    <a href="#" title="productname">
+                        <img src="@routes.Assets.at("/uploads", "product_images/7bf57bbc780ed7492372ae41de51bbf8.jpg")" alt="productname"> 
+                    </a>
+                    <span class="priced">898.99</span>
+                    <span class="price">539.49</span>
+                    <span class="name">"DIESEL DZ4235 Erkek Kol Saati"</span>
+                </li>
+
+                <li class="product">
+                    <a href="#" title="productname">
+                        <img src="@routes.Assets.at("/uploads", "product_images/b6f18eeadbaf681f3cb501c63121d1ee.jpg")" alt="productname"> 
+                    </a>
+                    <span class="priced">898.99</span>
+                    <span class="price">539.40</span>
+                    <span class="name">"DIESEL DZ5322 Unisex Kol Saati"</span>
+                </li>
+
+            </ul>
+        </div>
+        </section>
 }
