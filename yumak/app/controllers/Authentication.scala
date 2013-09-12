@@ -11,9 +11,9 @@ object Authentication extends Controller {
 
   val loginForm = Form(
     tuple(
-      "email" -> text,
+      "username" -> text,
       "password" -> text
-    ) verifying ("Invalid email or password", result => result match {
+    ) verifying ("Invalid username or password", result => result match {
         case (email, password) => User.authenticate(email, password).isDefined
     })
   )
@@ -40,7 +40,7 @@ object Authentication extends Controller {
   def authenticate = Action { implicit request =>
     loginForm.bindFromRequest.fold(
       formWithErrors => BadRequest(html.auth.login(formWithErrors)),
-      user => Redirect(routes.Restricted.index()).withSession("email" -> user._1)
+      user => Redirect(routes.Restricted.index()).withSession("username" -> user._1)
     )
   }
 }

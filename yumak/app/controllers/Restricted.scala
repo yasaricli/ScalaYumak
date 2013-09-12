@@ -11,7 +11,7 @@ object Restricted extends Controller with Secured {
    */
   def index = IsAuthenticated { username =>
     _ =>
-      User.getByEmail(username).map { user =>
+      User.getByUsername(username).map { user =>
         Ok(
           html.auth.restricted(user)
         )
